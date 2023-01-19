@@ -22,11 +22,13 @@ export default function App({ Component, pageProps }: AppProps) {
           zIndex: 50,
         }}
       />
-      <div className="min-h-screen max-w-[100rem] mx-auto px-20">
-        <Navigation />
-        <Component {...pageProps} />
-      </div>
+      <div className="min-h-screen">
+        <div className=" max-w-[100rem] mx-auto px-20">
+          <Navigation />
+          <Component {...pageProps} />
+        </div>
       <Contact />
+      </div>
       <Footer />
     </>
   );
