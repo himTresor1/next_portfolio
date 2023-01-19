@@ -1,8 +1,14 @@
 import user from "@/assets/profile_photo.webp";
+import shape4 from "@/assets/shape_4.png";
+import shape5 from "@/assets/shape_5.png";
+import shape6 from "@/assets/shape_6.png";
+import shape7 from "@/assets/shape_7.png";
+
 const About = () => {
   return (
-    <div className="flex mt-[15rem] justify-between">
-      <img className="w-[32rem]" src={user.src} />
+    <div className="flex pt-[30rem] relative justify-between">
+     
+      <img className="w-[28rem]" src={user.src} />
       <div className="flex gap-3 max-w-[45rem] flex-col">
         <div className="text-[rgb(54,91,254)] text-2xl">Know Me</div>
         <div className="font-bold text-5xl text-white">About</div>

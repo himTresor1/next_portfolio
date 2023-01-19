@@ -10,10 +10,31 @@ import webanimationIcon from "@/assets/web_animation.svg";
 import InteractionDesignIcon from "@/assets/interaction_icon.svg";
 import FaDevIcon from "@/assets/front_end_icon.svg";
 import mobileDevIcon from "@/assets/mobile_dev_icon.svg";
+import shape3 from "@/assets/shape_3 (1).png";
+import shape4 from "@/assets/shape_4.png";
+import shape5 from "@/assets/shape_5.png";
+import shape6 from "@/assets/shape_6.png";
+import shape7 from "@/assets/shape_7.png";
 
 const Intro = () => {
   return (
     <div className="flex pt-[20rem] relative flex-col gap-3">
+      <img
+        src={shape4.src}
+        className="absolute w-28 -z-10 -bottom-14 -left-5"
+        alt=""
+      />
+      <img
+        src={shape5.src}
+        className="absolute w-20 -bottom-32 left-[18rem]"
+        alt=""
+      />
+      <img
+        src={shape6.src}
+        className="absolute w-32 -bottom-[22rem] right-[22rem] "
+        alt=""
+      />
+      <img src={shape7.src} className="absolute w-12 bottom-0 right-0" alt="" />
       <img src={shape1.src} className="w-28 absolute top-[10rem] left-12" />
       <img src={shape2.src} className="w-14 absolute top-[5rem] left-[36rem]" />
       <div className="flex items-center gap-2 text-6xl">
@@ -45,35 +66,40 @@ const Intro = () => {
           </Link>
         </div>
       </div>
-      <div className="absolute w-1/2 h-[30rem] flex justify-center items-center right-0">
-        <img src={first.src} className="w-[10rem]" />
-        <div className="absolute flex-col h-[10rem] w-[10rem] flex items-center justify-center gap-5  top-12 left-32">
+      <div className="absolute w-1/2 top-[20rem] h-[30rem] flex justify-center items-center right-0">
+        <img
+          src={shape3.src}
+          className="absolute h-[7rem] -right-10 top-0"
+          alt=""
+        />
+        <img src={first.src} className="w-[14rem]" />
+        <div className="absolute flex-col h-[10rem] w-[12rem] flex items-center justify-center gap-5  top-8 left-32">
           <img src={webanimationIcon.src} className="w-12 z-50" />
           <div className="z-50 text-lg text-white font-bold max-w-[5rem] text-center">
             Web Animation
           </div>
-          <img src={WebAnimation.src} className="absolute z-0" />
+          <img src={WebAnimation.src} className="absolute w-full z-0" />
         </div>
-        <div className="absolute flex-col h-[20rem] w-[20rem] flex items-center justify-center gap-5  -top-10 right-6">
+        <div className="absolute flex-col h-[15rem] w-[15rem] flex items-center justify-center gap-5  -top-10 -right-3">
           <img src={FaDevIcon.src} className="w-24 z-50" />
           <div className="z-50 text-white font-bold max-w-[7rem] text-center">
             Front-end Development
           </div>
-          <img src={FeDev.src} className="absolute z-0" />
+          <img src={FeDev.src} className="absolute w-full z-0" />
         </div>
-        <div className="absolute flex-col h-[10rem] w-[10rem] flex items-center justify-center gap-5  bottom-5 right-[9rem]">
+        <div className="absolute flex-col h-[13rem] w-[13rem] flex items-center justify-center gap-5  -bottom-5 right-[4rem]">
           <img src={mobileDevIcon.src} className="w-7 z-50" />
           <div className="z-50 text-white text-lg font-bold max-w-[7rem] text-center">
             Mobile Development
           </div>
-          <img src={MobileDev.src} className="absolute z-0" />
+          <img src={MobileDev.src} className="absolute w-full z-0" />
         </div>
-        <div className="absolute flex-col h-[10rem] w-[10rem] flex items-center justify-center gap-5 bottom-4 left-[5.5rem]">
+        <div className="absolute flex-col h-[15rem] w-[15rem] flex items-center justify-center gap-5 -bottom-5 left-[2.5rem]">
           <img src={InteractionDesignIcon.src} className="w-10 z-50" />
           <div className="z-50 text-white font-bold max-w-[7rem] text-center">
             Interaction Design
           </div>
-          <img src={InteractinDesign.src} className="absolute z-0" />
+          <img src={InteractinDesign.src} className="absolute w-full z-0" />
         </div>
       </div>
     </div>
