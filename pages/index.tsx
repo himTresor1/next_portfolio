@@ -1,9 +1,11 @@
-import Navigation from "@/components/Navigation";
-import { useEffect, useState } from "react";
-import Snowfall from "react-snowfall";
-export default function Home() {
+import About from "@/components/About";
+import Intro from "@/components/Intro";
 
-  return <div>
-    <Navigation />
-  </div>;
+export default function Home() {
+  return (
+    <div>
+      <Intro />
+      <About />
+    </div>
+  );
 }

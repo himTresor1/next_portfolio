@@ -1,3 +1,6 @@
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import Navigation from "@/components/Navigation";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { useEffect, useState } from "react";
@@ -16,10 +19,15 @@ export default function App({ Component, pageProps }: AppProps) {
           position: "fixed",
           width: "100vw",
           height: "100vh",
-          zIndex: -1,
+          zIndex: 50,
         }}
       />
-      <Component {...pageProps} />
+      <div className="min-h-screen max-w-[100rem] mx-auto px-20">
+        <Navigation />
+        <Component {...pageProps} />
+      </div>
+      <Contact />
+      <Footer />
     </>
   );
 }

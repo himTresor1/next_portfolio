@@ -7,3 +7,6 @@ body{
 *{
   font-family: "CorpSansRd Cnd", sans-serif;
 }
+input, textarea {
+  color: white !important;
+}
