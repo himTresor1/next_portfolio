@@ -6,15 +6,16 @@ import shape7 from "@/assets/shape_7.png";
 
 const About = () => {
   return (
-    <div className="flex pt-[30rem] relative justify-between">
-      <img className="w-[37rem]" src={user.src} />
+    <div className="flex pt-[25rem] pb-[5rem] items-start gap-20 relative justify-between">
+      <img className="w-[28rem]" src={user.src} />
       <div className="flex gap-3 max-w-[45rem] flex-col">
         <div className="text-[rgb(54,91,254)] text-2xl">Know Me</div>
         <div className="font-bold text-5xl text-white">About</div>
-        <div className="text-gray-300 text-xl leading-8">
+        <div className="text-gray-300 text-lg leading-8">
           I'm a Front-End Developer located in Turkey. I have a serious passion
           for UI effects, animations and creating intuitive, dynamic user
-          experiences. <br /> <br />
+          experiences.
+          <br /> <br />
           My main experience is in front-end development but I also have a
           passion for design. Given that producing a modern website requires the
           combination of design, server technology, and the layer that users
@@ -24,8 +25,7 @@ const About = () => {
           I've built products for companies and businesses around the globe
           ranging from marketing websites to complex solutions and enterprise
           apps with focus on fast, elegant and accessible user experiences. I'm{" "}
-          <br />
-          <br />
+          <br /> <br />
           I'm a{" "}
           <a href="" className="underline text-[rgb(53,91,254)]">
             CodePen
