@@ -26,11 +26,11 @@ const Works = () => {
           Fantastic
         </div>
         <div className="font-bold text-5xl text-white">Selected Works</div>
-        <div className="w-full sm:flex-row flex-col items-center sm:gap-0 gap-24 sm:items-start flex justify-between">
+        <div className="w-full sm:flex-row flex-col items-center sm:gap-4 gap-24 sm:items-start flex justify-between">
           {works.map((work, index) => (
             <div
               key={index}
-              className="bg-[rgb(33,39,55)] relative xl:h-[22rem] sm:h-[35vw] p-10 rounded-tl-[30px] rounded-br-[30px] sm:max-w-auto max-w-[30rem] sm:w-[45vw] xl:w-[37rem]"
+              className="bg-[rgb(33,39,55)] relative xl:h-[22rem] sm:h-[35vw] p-10 rounded-tl-[30px] rounded-br-[30px] sm:max-w-auto  max-w-[38rem] sm:w-[45vw] "
             >
               <div className="flex gap-5 relative flex-col">
                 <div className="flex justify-between">

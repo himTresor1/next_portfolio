@@ -73,7 +73,7 @@ const Contact = () => {
       className="bg-[rgb(35,40,54)] pt-[15rem] w-full pb-10 mt-[10rem]"
     >
       <div className="max-w-[100rem] relative sm:px-20 flex flex-col gap-28 mx-auto">
-        <div className="absolute -top-[22rem] left-16 right-16 flex items-center justify-between px-10 w-[80%] rounded-tl-[40px] rounded-br-[40px] h-[15rem]">
+        {/* <div className="absolute -top-[22rem] left-16 right-16 flex items-center justify-between px-10 w-[80%] rounded-tl-[40px] rounded-br-[40px] h-[15rem]">
           <div className="flex pl-10 z-50 gap-3 flex-col">
             <div className="text-white font-bold text-3xl">
               DO YOU HAVE A PROJECT
@@ -91,7 +91,7 @@ const Contact = () => {
             alt=""
           />
           <div className="bg-[#0000ff93] rounded-tl-[40px] rounded-br-[40px] absolute top-0 z-40 w-full h-full "></div>
-        </div>
+        </div> */}
         <div className=" flex flex-col items-center ">
           <div className="text-3xl font-semibold mb-3 text-[rgb(54,91,254)]">
             Let`s Talk
