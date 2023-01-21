@@ -26,11 +26,11 @@ const Works = () => {
           Fantastic
         </div>
         <div className="font-bold text-5xl text-white">Selected Works</div>
-        <div className="w-full flex justify-between">
+        <div className="w-full sm:flex-row flex-col items-center sm:gap-0 gap-24 sm:items-start flex justify-between">
           {works.map((work, index) => (
             <div
               key={index}
-              className="bg-[rgb(33,39,55)] relative h-[22rem] p-12 rounded-tl-[30px] rounded-br-[30px] w-[33rem]"
+              className="bg-[rgb(33,39,55)] relative xl:h-[22rem] sm:h-[35vw] p-10 rounded-tl-[30px] rounded-br-[30px] sm:max-w-auto max-w-[30rem] sm:w-[45vw] xl:w-[37rem]"
             >
               <div className="flex gap-5 relative flex-col">
                 <div className="flex justify-between">
@@ -47,7 +47,7 @@ const Works = () => {
                     {work.desc}
                   </div>
                   <img
-                    className="h-[20rem] rounded-tl-[30px] rounded-br-[30px]"
+                    className="sm:h-[30vw] xl:h-[22rem] rounded-tl-[30px] rounded-br-[30px]"
                     src={work.cover}
                   />
                   <div className="bg-[rgba(33,39,55,0.65)] uppercase font-semibold text-sm  mr-auto rounded-tl-[15px] p-3 absolute bottom-6 left-0  translate-x-5 text-white rounded-br-[15px]">
@@ -59,7 +59,7 @@ const Works = () => {
           ))}
         </div>
       </div>
-      <div className="mt-[12rem]">
+      <div className="sm:mt-[8rem] mt-[5rem]">
         <Button
           style={{
             background: "rgb(31,98,250)",

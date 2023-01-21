@@ -1,22 +1,18 @@
-import {
-  FileCopyOutlined,
-  GitHub,
-  Instagram,
-  LinkedIn,
-  Twitter,
-} from "@mui/icons-material";
+import { GitHub, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
 import { alpha, Button, styled, TextField } from "@mui/material";
 import Behance from "@/assets/behance.svg";
 import CodePen from "@/assets/codepen.svg";
 import ContactPattern from "@/assets/contact_pattern.webp";
 import useCopy from "use-copy";
+import Copy from "@/assets/copy.svg";
+
 const Contact = () => {
   const [copied, copy, setCopied] = useCopy("muhammed@erdem.dev");
   const copyText = () => {
     copy();
     setTimeout(() => {
       setCopied(false);
-    }, 3000);
+    }, 1000);
   };
   const RedditTextField = styled((props: any) => (
     <TextField
@@ -72,8 +68,8 @@ const Contact = () => {
   ];
 
   return (
-    <div className="bg-[rgb(35,40,54)] pt-[15rem] pb-10 mt-[10rem]">
-      <div className="max-w-[100rem] relative px-20 flex flex-col gap-28 mx-auto">
+    <div className="bg-[rgb(35,40,54)] pt-[15rem] w-full pb-10 mt-[10rem]">
+      <div className="max-w-[100rem] relative sm:px-20 flex flex-col gap-28 mx-auto">
         <div className="absolute -top-[22rem] left-16 right-16 flex items-center justify-between px-10 w-[80%] rounded-tl-[40px] rounded-br-[40px] h-[15rem]">
           <div className="flex pl-10 z-50 gap-3 flex-col">
             <div className="text-white font-bold text-3xl">
@@ -99,8 +95,8 @@ const Contact = () => {
           </div>
           <div className="font-bold text-6xl text-white">Contact</div>
         </div>
-        <div className="flex w-full items-start gap-14">
-          <div className="flex items-end gap-5 w-[calc(50%-20px)] flex-col">
+        <div className="flex lg:flex-row flex-col w-full items-start gap-14">
+          <div className="flex items-end gap-5 w-full lg:w-[calc(50%-20px)] flex-col">
             <RedditTextField
               id="custom-css-outlined-input"
               className="w-full"
@@ -139,8 +135,8 @@ const Contact = () => {
               SEND MESSAGE
             </Button>
           </div>
-          <div className="w-2/3">
-            <div className="grid  grid-cols-2">
+          <div className="lg:w-2/3 w-full">
+            <div className="grid grid-cols-1 sm:grid-cols-2">
               {contacts.map((contact, index) => (
                 <a
                   href=""
@@ -169,9 +165,24 @@ const Contact = () => {
                 </a>
               ))}
             </div>
-            <div onClick={copyText} className="w-full flex items-center py-4 mt-4 bg-gray-600 cursor-pointer">
-              <FileCopyOutlined />
-              <div className="text-center w-full">muhammed@erdem.dev</div>
+            <div
+              onClick={copyText}
+              className={`w-full flex items-center rounded-tl-[20px] hover:bg-[rgb(54,91,254)] hover:text-white group rounded-br-[20px] h-[3.5rem] mt-4  cursor-pointer ${
+                copied
+                  ? "text-white bg-[rgb(54,91,254)]"
+                  : "bg-[rgb(44,48,62)] text-[rgb(102,111,133)]"
+              }`}
+            >
+              <div
+                className={`h-full bg-[rgb(102,111,133)] group-hover:bg-[rgb(54,91,254)] rounded-tl-[20px] flex items-center px-4 ${
+                  copied && "bg-[rgb(54,91,254)]"
+                }`}
+              >
+                <img src={Copy.src} className="w-7" />
+              </div>
+              <div className="text-center w-full font-bold text-lg">
+                {copied ? "copied" : "muhammed@erdem.dev"}
+              </div>
             </div>
           </div>
         </div>

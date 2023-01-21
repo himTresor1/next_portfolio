@@ -18,7 +18,7 @@ import shape7 from "@/assets/shape_7.png";
 
 const Intro = () => {
   return (
-    <div className="flex pt-[20rem] relative flex-col gap-3">
+    <div className="flex pt-[15rem] relative flex-col md:items-start items-center gap-3">
       <img
         src={shape4.src}
         className="absolute w-28 -z-10 -bottom-14 -left-5"
@@ -35,9 +35,9 @@ const Intro = () => {
         alt=""
       />
       <img src={shape7.src} className="absolute w-12 bottom-0 right-0" alt="" />
-      <img src={shape1.src} className="w-28 absolute top-[10rem] left-12" />
-      <img src={shape2.src} className="w-14 absolute top-[5rem] left-[36rem]" />
-      <div className="flex items-center gap-2 text-6xl">
+      <img src={shape1.src} className="md:w-28 w-16 absolute top-[7rem] left-12" />
+      <img src={shape2.src} className="w-14 absolute top-[5rem] sm:left-[36rem]" />
+      <div className="flex items-center gap-2 text-5xl">
         <div>👋</div>
         <div className="text-[rgb(54,91,254)] flex gap-[1px] items-center">
           <span>H</span>
@@ -50,11 +50,11 @@ const Intro = () => {
           <span>&nbsp;!</span>
         </div>
       </div>
-      <div className="flex gap-7 flex-col">
-        <div className="text-white text-5xl font-bold">I`m Muhammed Erdem</div>
+      <div className="flex gap-3 flex-col">
+        <div className="text-white text-5xl text-center font-bold">I`m Muhammed Erdem</div>
         <div className="text-[rgb(54,91,254)] text-lg">Front-end Engineer</div>
-        <div className="text-gray-300 max-w-[35rem] text-lg leading-8">
-          Specialized in front-end development but also like trying out other
+        <div className="text-gray-300 md:max-w-[35rem] md:text-left text-center text-lg leading-8">
+          Specialized in front-end development but also like trying out other <br />
           technologies in order to become more flexible.
         </div>
         <div className="flex items-center gap-10">
@@ -66,35 +66,35 @@ const Intro = () => {
           </Link>
         </div>
       </div>
-      <div className="absolute w-1/2 top-[20rem] h-[30rem] flex justify-center items-center right-0">
         <img
           src={shape3.src}
-          className="absolute h-[7rem] -right-10 top-0"
+          className="absolute sm:h-[7rem] h-[5rem] -right-10 sm:top-0 top-16 sm:bottom-16"
           alt=""
         />
-        <img src={first.src} className="w-[14rem]" />
-        <div className="absolute flex-col h-[10rem] w-[12rem] flex items-center justify-center gap-5  top-8 left-32">
+      <div className="absolute w-1/2 top-[20rem] h-[30rem] md:flex hidden justify-center items-center right-0">
+        <img src={first.src} className="xl:w-[14rem] w-[17vw]" />
+        <div className="absolute flex-col h-[10rem] w-[15vw] xl:w-[12rem] flex items-center justify-center gap-5  top-8 left-32">
           <img src={webanimationIcon.src} className="w-12 z-50" />
           <div className="z-50 text-lg text-white font-bold max-w-[5rem] text-center">
             Web Animation
           </div>
-          <img src={WebAnimation.src} className="absolute w-full z-0" />
+          <img src={WebAnimation.src} className="absolute h-full w-full z-0" />
         </div>
-        <div className="absolute flex-col h-[15rem] w-[15rem] flex items-center justify-center gap-5  -top-10 -right-3">
-          <img src={FaDevIcon.src} className="w-24 z-50" />
+        <div className="absolute flex-col h-[15rem] w-[20vw] xl:w-[15rem] flex items-center justify-center gap-5  -top-10 -right-3">
+          <img src={FaDevIcon.src} className="xl:w-20 w-16 z-50" />
           <div className="z-50 text-white font-bold max-w-[7rem] text-center">
             Front-end Development
           </div>
-          <img src={FeDev.src} className="absolute w-full z-0" />
+          <img src={FeDev.src} className="absolute w-full z-0 h-full" />
         </div>
-        <div className="absolute flex-col h-[13rem] w-[13rem] flex items-center justify-center gap-5  -bottom-5 right-[4rem]">
+        <div className="absolute flex-col h-[13rem] w-[15vw] xl:w-[13rem] flex items-center justify-center gap-5  -bottom-5 right-[4rem]">
           <img src={mobileDevIcon.src} className="w-7 z-50" />
           <div className="z-50 text-white text-lg font-bold max-w-[7rem] text-center">
             Mobile Development
           </div>
           <img src={MobileDev.src} className="absolute w-full z-0" />
         </div>
-        <div className="absolute flex-col h-[15rem] w-[15rem] flex items-center justify-center gap-5 -bottom-5 left-[2.5rem]">
+        <div className="absolute flex-col h-[15rem] w-[14vw] xl:w-[12rem] flex items-center justify-center gap-5 -bottom-5 left-[2.5rem]">
           <img src={InteractionDesignIcon.src} className="w-10 z-50" />
           <div className="z-50 text-white font-bold max-w-[7rem] text-center">
             Interaction Design

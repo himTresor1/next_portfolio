@@ -3,7 +3,7 @@ import { navs } from "./Navigation";
 
 const Footer = () => {
   return (
-    <div className="bg-[rgb(23,26,35)]  text-gray-500 px-10 flex justify-between w-full py-12 ">
+    <div className="bg-[rgb(23,26,35)] xl:text-base text-sm overflow-hidden text-gray-500 px-10 md:flex-row items-center md:gap-0 gap-6 flex-col flex justify-between w-full py-12 ">
       <div className="upppercase font-bold">
         COPYRIGHT &copy; 2022 ALL RIGHTS RESERVED
       </div>
@@ -20,7 +20,7 @@ const Footer = () => {
           >
             <span> {nav}</span>
             {index === 3 && (
-              <div className="absolute text-xs text-[white] top-[-1.5rem] -right-6  px-2 py-1 rounded-tl-md rounded-br-md bg-[rgb(55,91,254)]">
+              <div className="absolute text-xs text-[white] top-[-1.5rem] -right-6  px-2 py-1 p-1  rounded-tl-md rounded-br-md bg-[rgb(55,91,254)]">
                 SOON
               </div>
             )}

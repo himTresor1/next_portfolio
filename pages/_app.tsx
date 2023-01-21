@@ -22,14 +22,6 @@ export default function App({ Component, pageProps }: AppProps) {
           zIndex: 50,
         }}
       />
-      {/* <Snowfall
-        style={{
-          position: "fixed",
-          width: "100vw",
-          height: "100vh",
-          zIndex: 50,
-        }}
-      />
       <Snowfall
         style={{
           position: "fixed",
@@ -38,16 +30,9 @@ export default function App({ Component, pageProps }: AppProps) {
           zIndex: 50,
         }}
       />
-      <Snowfall
-        style={{
-          position: "fixed",
-          width: "100vw",
-          height: "100vh",
-          zIndex: 50,
-        }}
-      /> */}
+
       <div className="min-h-screen">
-        <div className=" max-w-[100rem] mx-auto px-20">
+        <div className=" max-w-[90rem] mx-auto px-5 xl:px-20">
           <Navigation />
           <Component {...pageProps} />
         </div>
