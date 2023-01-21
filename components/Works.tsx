@@ -20,7 +20,7 @@ const Works = () => {
     },
   ];
   return (
-    <div className="flex flex-col mb-[10rem] items-center">
+    <div id="works" className="flex flex-col mb-[10rem] items-center">
       <div className="flex flex-col w-full items-center gap-7">
         <div className="text-2xl font-semibold text-[rgb(54,91,254)]">
           Fantastic

@@ -68,7 +68,7 @@ const Intro = () => {
       </div>
         <img
           src={shape3.src}
-          className="absolute sm:h-[7rem] h-[5rem] -right-10 sm:top-0 top-16 sm:bottom-16"
+          className="absolute sm:h-[7rem] h-[5rem] -right-10 sm:top-[16rem] top-16"
           alt=""
         />
       <div className="absolute w-1/2 top-[20rem] h-[30rem] md:flex hidden justify-center items-center right-0">

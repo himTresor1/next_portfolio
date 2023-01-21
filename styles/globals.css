@@ -3,6 +3,7 @@
 @tailwind utilities;
 body{
   background: rgb(23, 26, 35);
+  scroll-behavior: smooth;
 }
 *{
   font-family: "CorpSansRd Cnd", sans-serif;

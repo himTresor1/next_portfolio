@@ -7,7 +7,7 @@ import shape7 from "@/assets/shape_7.png";
 const About = () => {
   const skills = ["React", "Vue", "React Native", "CSS3"];
   return (
-    <div className="flex pt-[25rem] pb-[5rem] md:gap-10 md:flex-row flex-col items-center  relative justify-between">
+    <div id="about" className="flex pt-[25rem] pb-[5rem] md:gap-10 md:flex-row flex-col items-center  relative justify-between">
       <div className="w-[28rem] relative">
         <img className="min-w-full" src={user.src} />
         <div className="absolute"></div>
